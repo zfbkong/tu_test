@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "den_test",
+    "children" : [ {
+      "name" : "TestCaseDen",
+      "children" : [ {
+        "name" : "土豆雅思接口测试",
+        "uid" : "387493b31ec1178a",
+        "parentUid" : "1ff09353567b8b577a7185a6a7a92577",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624848949062,
+          "stop" : 1624848949318,
+          "duration" : 256
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1ff09353567b8b577a7185a6a7a92577"
+    } ],
+    "uid" : "0629c768f9950b6cc156c24f17f15328"
+  } ]
+}

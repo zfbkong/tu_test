@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "den_test",
+    "children" : [ {
+      "name" : "土豆雅思接口测试",
+      "uid" : "387493b31ec1178a",
+      "parentUid" : "7753d0e1c78e10a654abd0865b1334a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624848949062,
+        "stop" : 1624848949318,
+        "duration" : 256
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7753d0e1c78e10a654abd0865b1334a4"
+  } ]
+}

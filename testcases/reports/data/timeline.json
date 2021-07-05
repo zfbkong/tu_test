@@ -1,0 +1,43 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "xiaoye.local",
+    "children" : [ {
+      "name" : "1007-MainThread",
+      "children" : [ {
+        "name" : "土豆雅思接口测试",
+        "uid" : "387493b31ec1178a",
+        "parentUid" : "c11b8a990cf8519b489045fafc076a67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624848949062,
+          "stop" : 1624848949318,
+          "duration" : 256
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c11b8a990cf8519b489045fafc076a67"
+    }, {
+      "name" : "965-MainThread",
+      "children" : [ {
+        "name" : "土豆雅思接口测试",
+        "uid" : "fb098150b06076e6",
+        "parentUid" : "6b61febf9d055a1fffbaa41ca07a7dd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624848412535,
+          "stop" : 1624848412796,
+          "duration" : 261
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b61febf9d055a1fffbaa41ca07a7dd3"
+    } ],
+    "uid" : "9decd843d0abd0eaa4777d48d2754796"
+  } ]
+}

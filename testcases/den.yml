@@ -1,0 +1,48 @@
+config:
+    name: 土豆雅思接口测试
+    base_url: https://eappser.todoen.com
+    variables:
+        version: 2.29.0
+        mobile: 13041201075
+        password: 9DDEFA27
+    parameters:
+        mobile-password: ${P(data.csv)}
+#    parameters:
+#        mobile: [13041201075, 13041201075]
+teststeps:
+-
+    name: 登录
+    request:
+        url: /user/login/password
+        method: POST
+        json:
+            mobile: $mobile
+            password: $password
+    extract:
+        uid: content.data.id
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.msg, 登录成功]
+-
+    name: 用户信息
+    request:
+        url: /userinfo/index
+        method: GET
+        headers:
+            tokenid: ${int_to_str($uid)}
+            Content-Type: application/json
+    validate:
+        - eq: [status_code, 200]
+#  纯量：字符串 布尔值 整数 浮点数 Null 时间 日期
+-
+    name: 金刚区
+    request:
+        url: /home/learn/list
+        method: GET
+        headers:
+            version: $version
+    validate:
+        - eq: [status_code, 200]
+
+
+

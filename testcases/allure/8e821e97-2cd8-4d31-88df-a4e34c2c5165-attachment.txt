@@ -1,0 +1,264 @@
+[32m2021-06-28 11:14:18.683[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m450[0m - [1mStart to run testcase: 土豆雅思接口测试, TestCase ID: 6db70f11-a521-4e3b-b709-45d93dd57db3[0m
+[32m2021-06-28 11:14:18.684[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录 >>>>>>[0m
+[32m2021-06-28 11:14:18.793[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.10.222, Port: 53331[0m
+[32m2021-06-28 11:14:18.794[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 60.205.217.215, Port: 443[0m
+[32m2021-06-28 11:14:18.795[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : https://eappser.todoen.com/user/login/password
+headers  : {
+    "User-Agent": "python-requests/2.25.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-6db70f11-a521-4e3b-b709-45d93dd57db3-058685",
+    "Content-Length": "49",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "mobile": "15236802386",
+    "password": "7AFCE8AA"
+}
+[0m
+[32m2021-06-28 11:14:18.797[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.13.12",
+    "Date": "Mon, 28 Jun 2021 03:14:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "296",
+    "Connection": "keep-alive",
+    "Set-Cookie": "JSESSIONID=93CC3ACF94FBD294D53C119CD276197B; Path=/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,username,password,token,appname,channel,tokenid,terminal,X-App-Type,version",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {
+    "JSESSIONID": "93CC3ACF94FBD294D53C119CD276197B"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "msg": "\u767b\u5f55\u6210\u529f",
+    "data": {
+        "loginState": "1",
+        "jumpPath": "",
+        "defult2": "1",
+        "nickname": "\u5c0f\u70e4\u9e2d5EGE",
+        "mobile": "15236802386",
+        "bindWx": 0,
+        "id": 818342,
+        "uhrl": "",
+        "defult": "1",
+        "category": "101",
+        "token": "0FA80D711080790201DEF0A6C514BC1999D672D8AA1522C6FF5F10A8D1CA239F",
+        "register": 0
+    },
+    "sucess": "A000000"
+}
+[0m
+[32m2021-06-28 11:14:18.797[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 107.36 ms, response_length: 0 bytes[0m
+[32m2021-06-28 11:14:18.798[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'uid': 818342}[0m
+[32m2021-06-28 11:14:18.799[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-06-28 11:14:18.799[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.msg equal 登录成功(str)	==> pass[0m
+[32m2021-06-28 11:14:18.800[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录 <<<<<<
+[0m
+[32m2021-06-28 11:14:18.800[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 用户信息 >>>>>>[0m
+[32m2021-06-28 11:14:18.903[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.10.222, Port: 53331[0m
+[32m2021-06-28 11:14:18.903[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 60.205.217.215, Port: 443[0m
+[32m2021-06-28 11:14:18.904[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : https://eappser.todoen.com/userinfo/index
+headers  : {
+    "User-Agent": "python-requests/2.25.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "tokenid": "818342",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-6db70f11-a521-4e3b-b709-45d93dd57db3-058801",
+    "Cookie": "JSESSIONID=93CC3ACF94FBD294D53C119CD276197B"
+}
+cookies  : {
+    "JSESSIONID": "93CC3ACF94FBD294D53C119CD276197B"
+}
+body     : None
+[0m
+[32m2021-06-28 11:14:18.906[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.13.12",
+    "Date": "Mon, 28 Jun 2021 03:14:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "418",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,username,password,token,appname,channel,tokenid,terminal,X-App-Type,version",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "msg": "\u83b7\u53d6\u7528\u6237\u4fe1\u606f\u6210\u529f",
+    "data": {
+        "address": "",
+        "mobile": "15236802386",
+        "bindWx": 0,
+        "industry": "",
+        "userid": "S_1791CB226064F60F6BB",
+        "target": "",
+        "isSign": false,
+        "signNum": "",
+        "userLable": "",
+        "rostertype": 0,
+        "needCollector": 1,
+        "school": "",
+        "userChannel": "",
+        "grade": "",
+        "nickname": "\u5c0f\u70e4\u9e2d5EGE",
+        "workstate": "",
+        "alias": "",
+        "uhrl": "",
+        "countDown": "",
+        "job": "",
+        "vip": {
+            "now": 1624850058860,
+            "end": 0,
+            "status": 1
+        }
+    },
+    "sucess": "A000000"
+}
+[0m
+[32m2021-06-28 11:14:18.907[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 101.21 ms, response_length: 0 bytes[0m
+[32m2021-06-28 11:14:18.907[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-06-28 11:14:18.908[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 用户信息 <<<<<<
+[0m
+[32m2021-06-28 11:14:18.908[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 金刚区 >>>>>>[0m
+[32m2021-06-28 11:14:18.947[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.10.222, Port: 53331[0m
+[32m2021-06-28 11:14:18.948[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 60.205.217.215, Port: 443[0m
+[32m2021-06-28 11:14:18.949[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : https://eappser.todoen.com/home/learn/list
+headers  : {
+    "User-Agent": "python-requests/2.25.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "version": "2.29.0",
+    "HRUN-Request-ID": "HRUN-6db70f11-a521-4e3b-b709-45d93dd57db3-058909",
+    "Cookie": "JSESSIONID=93CC3ACF94FBD294D53C119CD276197B"
+}
+cookies  : {
+    "JSESSIONID": "93CC3ACF94FBD294D53C119CD276197B"
+}
+body     : None
+[0m
+[32m2021-06-28 11:14:18.951[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.13.12",
+    "Date": "Mon, 28 Jun 2021 03:14:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1837",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,username,password,token,appname,channel,tokenid,terminal,X-App-Type,version",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "msg": "success",
+    "data": {
+        "total": 10,
+        "content": [
+            {
+                "jumpPath": "todoenapp://open/word/home",
+                "label": "",
+                "learnId": "word",
+                "picbk": "https://pan.todoen.com/app/pic/cihui3x.png",
+                "title": "\u5168\u79d1\u8bcd\u6c47"
+            },
+            {
+                "jumpPath": "todoenapp://open/listenSentences/home",
+                "label": "",
+                "learnId": "intensiveListening",
+                "picbk": "https://pan.todoen.com/app/pic/tingli3x.png",
+                "title": "\u5251\u96c5\u542c\u529b"
+            },
+            {
+                "jumpPath": "todoenapp://open/readSentences/home",
+                "label": "",
+                "learnId": "read",
+                "picbk": "https://pan.todoen.com/app/pic/yuedu3x.png",
+                "title": "\u5251\u96c5\u9605\u8bfb"
+            },
+            {
+                "jumpPath": "todoenapp://open/speaking/home",
+                "label": "https://pan.todoen.com/app/pic/dianpingbiaoqian3x.png",
+                "learnId": "speak",
+                "picbk": "https://pan.todoen.com/app/pic/kouyu3x.png",
+                "title": "\u53e3\u8bed\u673a\u7ecf"
+            },
+            {
+                "jumpPath": "todoenapp://open/writing/home",
+                "label": "",
+                "learnId": "write",
+                "picbk": "https://pan.todoen.com/app/pic/xiezuo3x.png",
+                "title": "\u5199\u4f5c\u673a\u7ecf"
+            },
+            {
+                "jumpPath": "todoenapp://open/listening/words",
+                "label": "",
+                "learnId": "listen",
+                "picbk": "https://pan.todoen.com/app/pic/tinglibikaoci3x.png",
+                "title": "\u542c\u529b\u8bcd\u6c47"
+            },
+            {
+                "jumpPath": "todoenapp://open/web?url=https%3A%2F%2Fwww.todoen.com%2Fposition%2Fv2%2F&fullScreen=1",
+                "label": "https://pan.todoen.com/app/pic/chaozhunbiaoqian3x.png",
+                "learnId": "ability",
+                "picbk": "https://pan.todoen.com/app/pic/dingweiceshi3x.png",
+                "title": "\u4f30\u5206\u795e\u5668"
+            },
+            {
+                "jumpPath": "todoenapp://open/exam/home",
+                "label": "",
+                "learnId": "exercise",
+                "picbk": "https://pan.todoen.com/app/pic/jianyazhenti3x.png",
+                "title": "\u5251\u96c5\u771f\u9898"
+            },
+            {
+                "jumpPath": "todoenapp://open/oral/home",
+                "label": "",
+                "learnId": "oral",
+                "picbk": "https://pan.todoen.com/app/pic/kouyuAI3x.png",
+                "title": "\u53e3\u8bedAI\u7ec3\u4e60"
+            },
+            {
+                "jumpPath": "todoenapp://open/word/test",
+                "label": "https://pan.todoen.com/app/pic/kuaisutifen.gif",
+                "learnId": "wordAbility",
+                "picbk": "https://pan.todoen.com/app/pic/nengliceping.png",
+                "title": "\u80fd\u529b\u6d4b\u8bc4"
+            }
+        ]
+    },
+    "sucess": "A000000"
+}
+[0m
+[32m2021-06-28 11:14:18.952[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 37.93 ms, response_length: 0 bytes[0m
+[32m2021-06-28 11:14:18.952[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-06-28 11:14:18.953[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 金刚区 <<<<<<
+[0m
+[32m2021-06-28 11:14:18.954[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/han/tu_test/logs/6db70f11-a521-4e3b-b709-45d93dd57db3.run.log[0m
